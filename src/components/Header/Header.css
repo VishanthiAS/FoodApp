@@ -1,0 +1,139 @@
+.header {
+  width: 100%;
+}
+.header-container {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo-wrapper {
+  padding-left: 30px;
+  margin-top: 6px;
+}
+
+.header-menu ul {
+  display: flex;
+}
+
+.header-menu li {
+  padding-right: 38px;
+  font-size: 17px;
+}
+
+.header-menu  a {
+  color: #272727;
+}
+
+.header-menu li :hover,
+.header-menu li :visited {
+  border-bottom: 3px var(--clr-primary-1) solid;
+}
+
+.header-cart-btns ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-cart-btns li {
+  padding-right: 20px;
+}
+
+.header-cart-icon {
+  font-size: 2rem;
+  color: black;
+  position: relative;
+  margin-right: 10px;
+  padding-top: 2px;
+}
+
+.header-cart-value {
+  position: absolute;
+  top: -10px;
+  right: -16px;
+  background: var(--clr-primary-1);
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.88rem;
+  color: var(--clr-white);
+  padding: 12px;
+  font-weight: bold;
+}
+
+.login-btn {
+  border: 1px var(--clr-primary-1) solid;
+  border-radius: 4px;
+  background-color: white;
+  color: var(--clr-primary-1);
+  height: max-content;
+  padding: 8px 14px;
+  font-size: 20px;
+}
+
+.signUp-btn {
+  border: none;
+  border-radius: 4px;
+  background-color: var(--clr-primary-1);
+  color: white;
+  height: max-content;
+  padding: 8px 14px;
+  font-size: 20px;
+}
+
+.login-btn:hover {
+  background-color: var(--clr-grey-10);
+}
+
+.signUp-btn:hover {
+  background-color: rgb(204, 148, 45);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+
+@media screen and (max-width: 794px) {
+  .header-logo-wrapper {
+    padding-left: 20px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-cart-btns {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: inline;
+    background: transparent;
+    border: transparent;
+    color: var(--clr-primary-5);
+    cursor: pointer;
+    margin-bottom: 12px;
+    margin-right: 10px;
+  }
+
+  .nav-toggle svg {
+    font-size: 2rem;
+  }
+
+  .nav-toggle svg:hover {
+    color: var(--clr-primary-1);
+  }
+
+  .header-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+  }
+}

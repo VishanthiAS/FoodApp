@@ -1,0 +1,127 @@
+.footer {
+  background-color: rgb(54, 54, 54);
+  width: 100vw;
+  color: rgba(255, 255, 255, 0.6);
+  /* position: absolute;
+  bottom: 0; */
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5% 10%;
+  text-align: justify;
+}
+
+.footer-contactUs,
+.footer-company,
+.footer-legal {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 6px 12px;
+}
+
+.footer-icons-btn {
+  border: 1px solid rgb(207, 207, 197);
+  border-radius: 50%;
+  height: max-content;
+  padding: 8px;
+  background-color: transparent;
+  color: rgb(207, 207, 197);
+}
+
+.footer-icons-btn svg {
+  height: 20px;
+  width: 20px;
+}
+
+.footer-icons-btn:hover {
+  color: white;
+  border-color: var(--clr-primary-1);
+  background-color: var(--clr-primary-1);
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer li {
+  margin-bottom: 20px;
+}
+
+.footer li:hover {
+  color: var(--clr-primary-1);
+}
+
+.copyrights-div {
+  padding: 6px 150px;
+}
+
+.copyrights-div p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-container h5 {
+  color: #f5f5dc;
+}
+
+.footer-logo-section {
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 720px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+  }
+  .footer-logo-section {
+    text-align: left;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    margin-bottom: 20px;
+  }
+
+  .footer-contactUs {
+    text-align: left;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .footer-company {
+    text-align: left;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .footer-legal {
+    text-align: left;
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .copyrights-div {
+    padding: 1% 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-h5 {
+    height: 35px;
+  }
+
+  .footer-ul li {
+    height: 44px;
+  }
+}
